@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\Conexao.cs" />
+    <Compile Include="Control\Victor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
