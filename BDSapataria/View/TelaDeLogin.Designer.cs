@@ -43,15 +43,17 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmail.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxEmail.Location = new System.Drawing.Point(31, 216);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(272, 23);
             this.textBoxEmail.TabIndex = 0;
-            this.textBoxEmail.Text = "Email";
+            this.textBoxEmail.Text = "CPF";
             // 
             // textBoxSenha
             // 
             this.textBoxSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSenha.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxSenha.Location = new System.Drawing.Point(31, 259);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.Size = new System.Drawing.Size(272, 23);

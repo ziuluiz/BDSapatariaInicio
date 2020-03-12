@@ -8,5 +8,10 @@ namespace BDSapataria.Control
 {
     class Conexao
     {
-    }
-}
+        public static string Conectar()
+        {
+            return "";
+        }
+
+    }//fim da classe
+}//fim do projeto
