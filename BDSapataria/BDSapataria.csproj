@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -76,6 +79,12 @@
     <Compile Include="View\TelaDeLogin.Designer.cs">
       <DependentUpon>TelaDeLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\teste.Designer.cs">
+      <DependentUpon>teste.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -88,6 +97,10 @@
     <EmbeddedResource Include="View\TelaDeLogin.resx">
       <DependentUpon>TelaDeLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\teste.resx">
+      <DependentUpon>teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -12,11 +12,10 @@ using MaterialSkin.Controls;
 
 namespace BDSapataria.View
 {
-    public partial class TelaDeLogin : MaterialForm
+    public partial class teste : MaterialForm
     {
-        public TelaDeLogin()
+        public teste()
         {
-            InitializeComponent();
             // Create a material theme manager and add the form to manage (this)
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
@@ -30,7 +29,7 @@ namespace BDSapataria.View
             );
         }
 
-        private void buttonEntrar_Click(object sender, EventArgs e)
+        private void teste_Load(object sender, EventArgs e)
         {
 
         }
