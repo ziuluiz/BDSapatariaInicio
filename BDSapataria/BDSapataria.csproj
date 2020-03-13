@@ -66,9 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\Conexao.cs" />
-    <Compile Include="Control\ManipulaCliente.cs" />
-    <Compile Include="Model\Cliente.cs" />
-    <Compile Include="Model\generic_1.cs" />
+    <Compile Include="Control\ManipulaFuncionario.cs" />
+    <Compile Include="Model\Funcionario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\TelaDeLogin.cs">
