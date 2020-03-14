@@ -79,12 +79,6 @@
     <Compile Include="View\AlterarVenda.Designer.cs">
       <DependentUpon>AlterarVenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\CadastrarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\CadastrarCliente.Designer.cs">
-      <DependentUpon>CadastrarCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\TelaDeLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,9 +108,6 @@
     </Compile>
     <EmbeddedResource Include="View\AlterarVenda.resx">
       <DependentUpon>AlterarVenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\CadastrarCliente.resx">
-      <DependentUpon>CadastrarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TelaDeLogin.resx">
       <DependentUpon>TelaDeLogin.cs</DependentUpon>
