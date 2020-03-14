@@ -225,7 +225,7 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonAlterarSapato;
-        private System.Windows.Forms.TextBox textBoxCadastraMarca;
+        private System.Windows.Forms.TextBox textBoxAlterarMarca;
         private System.Windows.Forms.TextBox textBoxAlterarGenero;
         private System.Windows.Forms.TextBox textBoxAlterarTamanho;
         private System.Windows.Forms.TextBox textBoxAlterarModelo;
