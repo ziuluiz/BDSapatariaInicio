@@ -7,19 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MaterialSkin;
 using MaterialSkin.Controls;
+using MaterialSkin;
+using BDSapataria.Control;
+using BDSapataria.Model;
 
 namespace BDSapataria.View
 {
-    public partial class teste : MaterialForm
+    public partial class ClienteCadastro : MaterialForm
     {
-        public teste()
+        public ClienteCadastro()
         {
+            InitializeComponent();
             // Create a material theme manager and add the form to manage (this)
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
 
             // Configure color schema
             materialSkinManager.ColorScheme = new ColorScheme(
@@ -29,7 +32,17 @@ namespace BDSapataria.View
             );
         }
 
-        private void teste_Load(object sender, EventArgs e)
+        private void buttonCadastrarCliente_Click(object sender, EventArgs e)
+        {
+            Cliente.cpfCliente = textBoxCpf.Text;
+            Cliente.fone = textBoxFone.Text;
+            Cliente.endereco = textBoxEndereco.Text;
+            Cliente.nomeCli = textBoxNome.Text;
+            ManipulaCliente manipulaCliente = new ManipulaCliente();
+            manipulaCliente.cadastrarCliente();
+        }
+
+        private void ClienteCadastro_Load(object sender, EventArgs e)
         {
 
         }
