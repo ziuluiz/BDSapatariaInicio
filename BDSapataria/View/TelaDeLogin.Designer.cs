@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeLogin));
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.textBoxSenha = new System.Windows.Forms.TextBox();
+            this.textBoxCPFLogin = new System.Windows.Forms.TextBox();
+            this.textBoxSenhaLogin = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelCadastroFun = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,25 +40,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBoxEmail
+            // textBoxCPFLogin
             // 
-            this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxEmail.Location = new System.Drawing.Point(31, 216);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(272, 23);
-            this.textBoxEmail.TabIndex = 0;
-            this.textBoxEmail.Text = "CPF";
+            this.textBoxCPFLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCPFLogin.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBoxCPFLogin.Location = new System.Drawing.Point(31, 216);
+            this.textBoxCPFLogin.Name = "textBoxCPFLogin";
+            this.textBoxCPFLogin.Size = new System.Drawing.Size(272, 23);
+            this.textBoxCPFLogin.TabIndex = 0;
+            this.textBoxCPFLogin.Text = "CPF";
             // 
-            // textBoxSenha
+            // textBoxSenhaLogin
             // 
-            this.textBoxSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSenha.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxSenha.Location = new System.Drawing.Point(31, 259);
-            this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.Size = new System.Drawing.Size(272, 23);
-            this.textBoxSenha.TabIndex = 1;
-            this.textBoxSenha.Text = "Senha";
+            this.textBoxSenhaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSenhaLogin.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBoxSenhaLogin.Location = new System.Drawing.Point(31, 259);
+            this.textBoxSenhaLogin.Name = "textBoxSenhaLogin";
+            this.textBoxSenhaLogin.Size = new System.Drawing.Size(272, 23);
+            this.textBoxSenhaLogin.TabIndex = 1;
+            this.textBoxSenhaLogin.Text = "Senha";
             // 
             // label1
             // 
@@ -70,16 +70,17 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Não possui uma conta?";
             // 
-            // linkLabel1
+            // linkLabelCadastroFun
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(213, 376);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(88, 17);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Cadastre-se!";
+            this.linkLabelCadastroFun.AutoSize = true;
+            this.linkLabelCadastroFun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelCadastroFun.Location = new System.Drawing.Point(213, 376);
+            this.linkLabelCadastroFun.Name = "linkLabelCadastroFun";
+            this.linkLabelCadastroFun.Size = new System.Drawing.Size(88, 17);
+            this.linkLabelCadastroFun.TabIndex = 4;
+            this.linkLabelCadastroFun.TabStop = true;
+            this.linkLabelCadastroFun.Text = "Cadastre-se!";
+            this.linkLabelCadastroFun.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelCadastroFun_LinkClicked);
             // 
             // pictureBox1
             // 
@@ -94,20 +95,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Give You What You Like", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(206, 78);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(172, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 59);
+            this.label2.Size = new System.Drawing.Size(136, 63);
             this.label2.TabIndex = 6;
             this.label2.Text = "Fast";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Give You What You Like", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(193, 140);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(159, 136);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 59);
+            this.label3.Size = new System.Drawing.Size(185, 63);
             this.label3.TabIndex = 7;
             this.label3.Text = "Shoes";
             // 
@@ -131,11 +132,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkLabelCadastroFun);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonEntrar);
-            this.Controls.Add(this.textBoxSenha);
-            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxSenhaLogin);
+            this.Controls.Add(this.textBoxCPFLogin);
             this.Name = "TelaDeLogin";
             this.ShowIcon = false;
             this.Text = "Login";
@@ -147,10 +148,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.TextBox textBoxSenha;
+        private System.Windows.Forms.TextBox textBoxCPFLogin;
+        private System.Windows.Forms.TextBox textBoxSenhaLogin;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkLabelCadastroFun;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

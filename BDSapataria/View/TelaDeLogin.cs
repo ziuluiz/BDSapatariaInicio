@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using BDSapataria.Model;
+using BDSapataria.Control;
 
 namespace BDSapataria.View
 {
@@ -32,7 +34,17 @@ namespace BDSapataria.View
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
+                       
+        }
+
+        private void linkLabelCadastroFun_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            TelaDeCadastroFuncionario telaDeCadastroFuncionario = new TelaDeCadastroFuncionario();
+            telaDeCadastroFuncionario.Closed += (s, args) => this.Close();
+            telaDeCadastroFuncionario.ShowDialog();
 
         }
-    }
-}
+
+    }//fim da classe
+}//fim do projeto 
