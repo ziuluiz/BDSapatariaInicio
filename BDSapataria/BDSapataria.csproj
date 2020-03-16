@@ -85,6 +85,12 @@
     <Compile Include="View\GerenciarCliente.Designer.cs">
       <DependentUpon>GerenciarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Qualquer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Qualquer.Designer.cs">
+      <DependentUpon>Qualquer.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TelaDeLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\GerenciarCliente.resx">
       <DependentUpon>GerenciarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Qualquer.resx">
+      <DependentUpon>Qualquer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TelaDeLogin.resx">
       <DependentUpon>TelaDeLogin.cs</DependentUpon>
