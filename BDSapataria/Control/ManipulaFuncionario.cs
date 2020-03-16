@@ -117,5 +117,30 @@ namespace BDSapataria.Control
             MessageBox.Show("Cliente deletado com sucesso!");
         }
 
+        public void LogarFuncionario()
+        {
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
+            SqlCommand cmd = new SqlCommand("pLogarFuncionario", cn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@CPF", Funcionario.Cpf);
+            cmd.Parameters.AddWithValue("@senha", Funcionario.Senha);
+
+            cn.Open();
+            var dr = cmd.ExecuteReader();
+
+            if (dr.Read())
+            {
+                Funcionario.ConfirmaCPF = (string)dr["CPF"];
+                Funcionario.ConfirmaSenha = (string)dr["senha"];
+
+            }
+            else
+            {
+                MessageBox.Show("Dados não encontrados!");
+            }
+        }//fim do logar funcionario
+
     }//fim da classe
 }//fim do projeto

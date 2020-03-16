@@ -34,7 +34,20 @@ namespace BDSapataria.View
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
-                       
+            Funcionario.Cpf = textBoxCPFLogin.Text;
+            Funcionario.Senha = textBoxSenhaLogin.Text;
+
+            ManipulaFuncionario manipulaFuncionario = new ManipulaFuncionario();
+            manipulaFuncionario.LogarFuncionario();
+
+            if (Funcionario.Cpf == Funcionario.ConfirmaCPF ||
+                Funcionario.Senha == Funcionario.ConfirmaSenha)
+            {
+                /*this.Hide();
+                TelaDeReserva telaDeReserva = new TelaDeReserva();
+                telaDeReserva.Closed += (s, args) => this.Close();
+                telaDeReserva.ShowDialog();*/
+            }
         }
 
         private void linkLabelCadastroFun_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -42,9 +55,19 @@ namespace BDSapataria.View
             this.Hide();
             TelaDeCadastroFuncionario telaDeCadastroFuncionario = new TelaDeCadastroFuncionario();
             telaDeCadastroFuncionario.Closed += (s, args) => this.Close();
-            telaDeCadastroFuncionario.ShowDialog();
+            telaDeCadastroFuncionario.ShowDialog();            
 
         }
 
+        private void textBoxSenhaLogin_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBoxSenhaLogin.Text = "";
+            textBoxSenhaLogin.PasswordChar = Convert.ToChar("*");
+        }
+
+        private void textBoxCPFLogin_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBoxCPFLogin.Text = "";
+        }
     }//fim da classe
 }//fim do projeto 

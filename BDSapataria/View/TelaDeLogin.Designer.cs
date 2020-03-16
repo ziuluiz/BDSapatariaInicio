@@ -49,6 +49,7 @@
             this.textBoxCPFLogin.Size = new System.Drawing.Size(272, 23);
             this.textBoxCPFLogin.TabIndex = 0;
             this.textBoxCPFLogin.Text = "CPF";
+            this.textBoxCPFLogin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxCPFLogin_MouseClick);
             // 
             // textBoxSenhaLogin
             // 
@@ -59,6 +60,7 @@
             this.textBoxSenhaLogin.Size = new System.Drawing.Size(272, 23);
             this.textBoxSenhaLogin.TabIndex = 1;
             this.textBoxSenhaLogin.Text = "Senha";
+            this.textBoxSenhaLogin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSenhaLogin_MouseClick);
             // 
             // label1
             // 
