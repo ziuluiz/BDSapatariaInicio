@@ -108,25 +108,6 @@ namespace BDSapataria.Control
             return dados;
         }
 
-        public static BindingSource visualizarcodProtudoSapato()
-        {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
-            SqlCommand cmd = new SqlCommand("pVisualizarSapatoCodigo", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cn.Open();
-            cmd.ExecuteNonQuery();
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
-
-            BindingSource dados = new BindingSource();
-            dados.DataSource = dt;
-
-            return dados;
-        }
-
         public void visualizarProdutoCodien()
         {
             SqlConnection cn = new SqlConnection(Conexao.conectar());

@@ -14,7 +14,7 @@ namespace BDSapataria.Control
     {
         public void cadastrarVenda() 
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar);
+            SqlConnection cn = new SqlConnection(Conexao.Conectar);
             SqlCommand cmd = new SqlCommand("pCadastrarVenda", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -92,25 +92,6 @@ namespace BDSapataria.Control
         {
             SqlConnection cn = new SqlConnection(Conexao.conectar());
             SqlCommand cmd = new SqlCommand("pVisualizarVendasTudo", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cn.Open();
-            cmd.ExecuteNonQuery();
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
-
-            BindingSource dados = new BindingSource();
-            dados.DataSource = dt;
-
-            return dados;
-        }
-
-        public static BindingSource visualizarTudoIDVenda()
-        {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
-            SqlCommand cmd = new SqlCommand("pVisualizarIDVendas", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cn.Open();
             cmd.ExecuteNonQuery();
