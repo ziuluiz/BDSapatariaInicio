@@ -28,6 +28,14 @@ namespace BDSapataria.View
 
         private void buttonVisualizar_Click(object sender, EventArgs e)
         {
+            
+
+
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
             dataGridViewCliente.DataSource = ManipulaCliente.visualizarTodosCliente();
 
 
@@ -41,8 +49,6 @@ namespace BDSapataria.View
             dataGridViewCliente.Columns[6].HeaderText = "Nome";
             dataGridViewCliente.Columns[7].HeaderText = "Endereco";
             dataGridViewCliente.Columns[8].HeaderText = "Telefone";
-            
-
         }
     }
 }

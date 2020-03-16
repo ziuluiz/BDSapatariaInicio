@@ -32,19 +32,19 @@
             this.labelEndereco = new System.Windows.Forms.Label();
             this.labelNome = new System.Windows.Forms.Label();
             this.labelFone = new System.Windows.Forms.Label();
-            this.buttonPesquisarCliente = new System.Windows.Forms.Button();
-            this.buttonDeletarCliente = new System.Windows.Forms.Button();
-            this.buttonAlterarCliente = new System.Windows.Forms.Button();
             this.textBoxEndereco = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.textBoxCpf = new System.Windows.Forms.TextBox();
             this.textBoxTelefone = new System.Windows.Forms.TextBox();
+            this.materialRaisedButtonAlterar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButtonPesquisaCliente = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // labelCPF
             // 
             this.labelCPF.AutoSize = true;
-            this.labelCPF.Location = new System.Drawing.Point(58, 167);
+            this.labelCPF.Location = new System.Drawing.Point(26, 160);
             this.labelCPF.Name = "labelCPF";
             this.labelCPF.Size = new System.Drawing.Size(27, 13);
             this.labelCPF.TabIndex = 0;
@@ -53,7 +53,7 @@
             // labelEndereco
             // 
             this.labelEndereco.AutoSize = true;
-            this.labelEndereco.Location = new System.Drawing.Point(32, 237);
+            this.labelEndereco.Location = new System.Drawing.Point(0, 230);
             this.labelEndereco.Name = "labelEndereco";
             this.labelEndereco.Size = new System.Drawing.Size(53, 13);
             this.labelEndereco.TabIndex = 1;
@@ -62,7 +62,7 @@
             // labelNome
             // 
             this.labelNome.AutoSize = true;
-            this.labelNome.Location = new System.Drawing.Point(50, 211);
+            this.labelNome.Location = new System.Drawing.Point(18, 204);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(35, 13);
             this.labelNome.TabIndex = 2;
@@ -71,88 +71,107 @@
             // labelFone
             // 
             this.labelFone.AutoSize = true;
-            this.labelFone.Location = new System.Drawing.Point(36, 263);
+            this.labelFone.Location = new System.Drawing.Point(4, 256);
             this.labelFone.Name = "labelFone";
             this.labelFone.Size = new System.Drawing.Size(49, 13);
             this.labelFone.TabIndex = 3;
             this.labelFone.Text = "Telefone";
             // 
-            // buttonPesquisarCliente
-            // 
-            this.buttonPesquisarCliente.Location = new System.Drawing.Point(279, 165);
-            this.buttonPesquisarCliente.Name = "buttonPesquisarCliente";
-            this.buttonPesquisarCliente.Size = new System.Drawing.Size(75, 23);
-            this.buttonPesquisarCliente.TabIndex = 4;
-            this.buttonPesquisarCliente.Text = "Pesquisar";
-            this.buttonPesquisarCliente.UseVisualStyleBackColor = true;
-            this.buttonPesquisarCliente.Click += new System.EventHandler(this.buttonPesquisarCliente_Click);
-            // 
-            // buttonDeletarCliente
-            // 
-            this.buttonDeletarCliente.Location = new System.Drawing.Point(187, 370);
-            this.buttonDeletarCliente.Name = "buttonDeletarCliente";
-            this.buttonDeletarCliente.Size = new System.Drawing.Size(75, 23);
-            this.buttonDeletarCliente.TabIndex = 5;
-            this.buttonDeletarCliente.Text = "Deletar";
-            this.buttonDeletarCliente.UseVisualStyleBackColor = true;
-            this.buttonDeletarCliente.Click += new System.EventHandler(this.buttonDeletarCliente_Click);
-            // 
-            // buttonAlterarCliente
-            // 
-            this.buttonAlterarCliente.Location = new System.Drawing.Point(91, 370);
-            this.buttonAlterarCliente.Name = "buttonAlterarCliente";
-            this.buttonAlterarCliente.Size = new System.Drawing.Size(75, 23);
-            this.buttonAlterarCliente.TabIndex = 6;
-            this.buttonAlterarCliente.Text = "Alterar";
-            this.buttonAlterarCliente.UseVisualStyleBackColor = true;
-            this.buttonAlterarCliente.Click += new System.EventHandler(this.buttonAlterarCliente_Click);
-            // 
             // textBoxEndereco
             // 
-            this.textBoxEndereco.Location = new System.Drawing.Point(91, 234);
+            this.textBoxEndereco.Location = new System.Drawing.Point(59, 227);
             this.textBoxEndereco.Name = "textBoxEndereco";
             this.textBoxEndereco.Size = new System.Drawing.Size(171, 20);
             this.textBoxEndereco.TabIndex = 7;
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(91, 208);
+            this.textBoxNome.Location = new System.Drawing.Point(59, 201);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(171, 20);
             this.textBoxNome.TabIndex = 8;
             // 
             // textBoxCpf
             // 
-            this.textBoxCpf.Location = new System.Drawing.Point(91, 167);
+            this.textBoxCpf.Location = new System.Drawing.Point(59, 160);
             this.textBoxCpf.Name = "textBoxCpf";
             this.textBoxCpf.Size = new System.Drawing.Size(171, 20);
             this.textBoxCpf.TabIndex = 9;
             // 
             // textBoxTelefone
             // 
-            this.textBoxTelefone.Location = new System.Drawing.Point(91, 260);
+            this.textBoxTelefone.Location = new System.Drawing.Point(59, 253);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(171, 20);
             this.textBoxTelefone.TabIndex = 10;
+            // 
+            // materialRaisedButtonAlterar
+            // 
+            this.materialRaisedButtonAlterar.AutoSize = true;
+            this.materialRaisedButtonAlterar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButtonAlterar.Depth = 0;
+            this.materialRaisedButtonAlterar.Icon = null;
+            this.materialRaisedButtonAlterar.Location = new System.Drawing.Point(59, 303);
+            this.materialRaisedButtonAlterar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButtonAlterar.Name = "materialRaisedButtonAlterar";
+            this.materialRaisedButtonAlterar.Primary = true;
+            this.materialRaisedButtonAlterar.Size = new System.Drawing.Size(80, 36);
+            this.materialRaisedButtonAlterar.TabIndex = 11;
+            this.materialRaisedButtonAlterar.Text = "Alterar";
+            this.materialRaisedButtonAlterar.UseVisualStyleBackColor = true;
+            this.materialRaisedButtonAlterar.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.AutoSize = true;
+            this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Icon = null;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(151, 303);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(79, 36);
+            this.materialRaisedButton2.TabIndex = 12;
+            this.materialRaisedButton2.Text = "Deletar";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            // 
+            // materialRaisedButtonPesquisaCliente
+            // 
+            this.materialRaisedButtonPesquisaCliente.AutoSize = true;
+            this.materialRaisedButtonPesquisaCliente.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButtonPesquisaCliente.Depth = 0;
+            this.materialRaisedButtonPesquisaCliente.Icon = null;
+            this.materialRaisedButtonPesquisaCliente.Location = new System.Drawing.Point(94, 99);
+            this.materialRaisedButtonPesquisaCliente.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButtonPesquisaCliente.Name = "materialRaisedButtonPesquisaCliente";
+            this.materialRaisedButtonPesquisaCliente.Primary = true;
+            this.materialRaisedButtonPesquisaCliente.Size = new System.Drawing.Size(94, 36);
+            this.materialRaisedButtonPesquisaCliente.TabIndex = 13;
+            this.materialRaisedButtonPesquisaCliente.Text = "Pesquisar";
+            this.materialRaisedButtonPesquisaCliente.UseVisualStyleBackColor = true;
+            this.materialRaisedButtonPesquisaCliente.Click += new System.EventHandler(this.materialRaisedButton3_Click);
             // 
             // GerenciarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 495);
+            this.ClientSize = new System.Drawing.Size(267, 381);
+            this.Controls.Add(this.materialRaisedButtonPesquisaCliente);
+            this.Controls.Add(this.materialRaisedButton2);
+            this.Controls.Add(this.materialRaisedButtonAlterar);
             this.Controls.Add(this.textBoxTelefone);
             this.Controls.Add(this.textBoxCpf);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.textBoxEndereco);
-            this.Controls.Add(this.buttonAlterarCliente);
-            this.Controls.Add(this.buttonDeletarCliente);
-            this.Controls.Add(this.buttonPesquisarCliente);
             this.Controls.Add(this.labelFone);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.labelEndereco);
             this.Controls.Add(this.labelCPF);
             this.Name = "GerenciarCliente";
             this.Text = "GerenciarCliente";
+            this.Load += new System.EventHandler(this.GerenciarCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,12 +183,12 @@
         private System.Windows.Forms.Label labelEndereco;
         private System.Windows.Forms.Label labelNome;
         private System.Windows.Forms.Label labelFone;
-        private System.Windows.Forms.Button buttonPesquisarCliente;
-        private System.Windows.Forms.Button buttonDeletarCliente;
-        private System.Windows.Forms.Button buttonAlterarCliente;
         private System.Windows.Forms.TextBox textBoxEndereco;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.TextBox textBoxCpf;
         private System.Windows.Forms.TextBox textBoxTelefone;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButtonAlterar;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButtonPesquisaCliente;
     }
 }

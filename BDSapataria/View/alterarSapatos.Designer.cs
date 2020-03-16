@@ -30,7 +30,7 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonAlterarSapato = new System.Windows.Forms.Button();
-            this.textBoxCadastraMarca = new System.Windows.Forms.TextBox();
+           
             this.textBoxAlterarGenero = new System.Windows.Forms.TextBox();
             this.textBoxAlterarTamanho = new System.Windows.Forms.TextBox();
             this.textBoxAlterarModelo = new System.Windows.Forms.TextBox();
@@ -57,7 +57,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.buttonAlterarSapato);
-            this.groupBox1.Controls.Add(this.textBoxCadastraMarca);
+
             this.groupBox1.Controls.Add(this.textBoxAlterarGenero);
             this.groupBox1.Controls.Add(this.textBoxAlterarTamanho);
             this.groupBox1.Controls.Add(this.textBoxAlterarModelo);
@@ -83,10 +83,7 @@
             // 
             // textBoxCadastraMarca
             // 
-            this.textBoxCadastraMarca.Location = new System.Drawing.Point(312, 283);
-            this.textBoxCadastraMarca.Name = "textBoxCadastraMarca";
-            this.textBoxCadastraMarca.Size = new System.Drawing.Size(228, 20);
-            this.textBoxCadastraMarca.TabIndex = 8;
+
             // 
             // textBoxAlterarGenero
             // 

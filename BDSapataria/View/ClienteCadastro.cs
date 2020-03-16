@@ -34,15 +34,25 @@ namespace BDSapataria.View
 
         private void buttonCadastrarCliente_Click(object sender, EventArgs e)
         {
-            Cliente.cpfCliente = textBoxCpf.Text;
-            Cliente.fone = textBoxFone.Text;
-            Cliente.endereco = textBoxEndereco.Text;
-            Cliente.nomeCli = textBoxNome.Text;
+           
+        }
+
+        private void ClienteCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            Cliente.CpfCliente = textBoxCpf.Text;
+            Cliente.Fone = textBoxFone.Text;
+            Cliente.Endereco = textBoxEndereco.Text;
+            Cliente.NomeCli = textBoxNome.Text;
             ManipulaCliente manipulaCliente = new ManipulaCliente();
             manipulaCliente.cadastrarCliente();
         }
 
-        private void ClienteCadastro_Load(object sender, EventArgs e)
+        private void materialLabel1_Click(object sender, EventArgs e)
         {
 
         }
