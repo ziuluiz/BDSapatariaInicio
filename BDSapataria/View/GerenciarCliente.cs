@@ -34,38 +34,58 @@ namespace BDSapataria.View
 
         private void buttonAlterarCliente_Click(object sender, EventArgs e)
         {
-            Cliente.cpfCliente = textBoxCpf.Text;
-            Cliente.nomeCli = textBoxNome.Text;
-            Cliente.fone = textBoxTelefone.Text;
-            Cliente.endereco = textBoxEndereco.Text;
-           
-            ManipulaCliente manipulaCliente = new ManipulaCliente();
-            manipulaCliente.alterarCliente();
+            
         }
 
         private void buttonDeletarCliente_Click(object sender, EventArgs e)
         {
-            Cliente.cpfCliente = textBoxCpf.Text;
+          
+           
+        }
+
+        private void buttonPesquisarCliente_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            Cliente.CpfCliente = textBoxCpf.Text;
+            Cliente.NomeCli = textBoxNome.Text;
+            Cliente.Fone = textBoxTelefone.Text;
+            Cliente.Endereco = textBoxEndereco.Text;
+
+            ManipulaCliente manipulaCliente = new ManipulaCliente();
+            manipulaCliente.alterarCliente();
+        }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+            Cliente.CpfCliente = textBoxCpf.Text;
             ManipulaCliente manipulaCliente = new ManipulaCliente();
             manipulaCliente.deletarCliente();
             textBoxCpf.Text = "";
             textBoxNome.Text = "";
             textBoxTelefone.Text = "";
             textBoxEndereco.Text = "";
-           
         }
 
-        private void buttonPesquisarCliente_Click(object sender, EventArgs e)
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
-            Cliente.cpfCliente = textBoxCpf.Text;
+            Cliente.CpfCliente = textBoxCpf.Text;
 
             ManipulaCliente manipulaCliente = new ManipulaCliente();
             manipulaCliente.deletarCliente();
 
-            textBoxCpf.Text = Cliente.cpfCliente;
-            textBoxNome.Text = Cliente.nomeCli;
-            textBoxTelefone.Text = Cliente.fone;
-            textBoxEndereco.Text = Cliente.endereco;
+            textBoxCpf.Text = Cliente.CpfCliente;
+            textBoxNome.Text = Cliente.NomeCli;
+            textBoxTelefone.Text = Cliente.Fone;
+            textBoxEndereco.Text = Cliente.Endereco;
+        }
+
+        private void GerenciarCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

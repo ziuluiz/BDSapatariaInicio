@@ -36,7 +36,8 @@
             this.textBoxCpf = new System.Windows.Forms.TextBox();
             this.textBoxFone = new System.Windows.Forms.TextBox();
             this.textBoxEndereco = new System.Windows.Forms.TextBox();
-            this.buttonCadastrarCliente = new System.Windows.Forms.Button();
+            this.materialRaisedButtonCadastro = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // labelNome
@@ -107,22 +108,43 @@
             this.textBoxEndereco.Size = new System.Drawing.Size(190, 20);
             this.textBoxEndereco.TabIndex = 7;
             // 
-            // buttonCadastrarCliente
+            // materialRaisedButtonCadastro
             // 
-            this.buttonCadastrarCliente.Location = new System.Drawing.Point(124, 366);
-            this.buttonCadastrarCliente.Name = "buttonCadastrarCliente";
-            this.buttonCadastrarCliente.Size = new System.Drawing.Size(126, 23);
-            this.buttonCadastrarCliente.TabIndex = 8;
-            this.buttonCadastrarCliente.Text = "Confirmar cadastro";
-            this.buttonCadastrarCliente.UseVisualStyleBackColor = true;
-            this.buttonCadastrarCliente.Click += new System.EventHandler(this.buttonCadastrarCliente_Click);
+            this.materialRaisedButtonCadastro.AutoSize = true;
+            this.materialRaisedButtonCadastro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButtonCadastro.Depth = 0;
+            this.materialRaisedButtonCadastro.Icon = null;
+            this.materialRaisedButtonCadastro.Location = new System.Drawing.Point(149, 359);
+            this.materialRaisedButtonCadastro.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButtonCadastro.Name = "materialRaisedButtonCadastro";
+            this.materialRaisedButtonCadastro.Primary = true;
+            this.materialRaisedButtonCadastro.Size = new System.Drawing.Size(104, 36);
+            this.materialRaisedButtonCadastro.TabIndex = 9;
+            this.materialRaisedButtonCadastro.Text = "Cadastrar!";
+            this.materialRaisedButtonCadastro.UseVisualStyleBackColor = true;
+            this.materialRaisedButtonCadastro.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(129, 91);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(143, 19);
+            this.materialLabel1.TabIndex = 10;
+            this.materialLabel1.Text = "Crie sua conta aqui!";
+            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
             // 
             // ClienteCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 461);
-            this.Controls.Add(this.buttonCadastrarCliente);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.materialRaisedButtonCadastro);
             this.Controls.Add(this.textBoxEndereco);
             this.Controls.Add(this.textBoxFone);
             this.Controls.Add(this.textBoxCpf);
@@ -149,6 +171,7 @@
         private System.Windows.Forms.TextBox textBoxCpf;
         private System.Windows.Forms.TextBox textBoxFone;
         private System.Windows.Forms.TextBox textBoxEndereco;
-        private System.Windows.Forms.Button buttonCadastrarCliente;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButtonCadastro;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
