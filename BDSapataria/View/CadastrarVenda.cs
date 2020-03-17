@@ -21,12 +21,12 @@ namespace BDSapataria.View
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
         {
-            //Vendas.Quantidade = textBoxQuantidaCadastrar.Text;
-            //Vendas.ValorTotal = textBoxValorTotalCadastrar.Text;
-            //Vendas.DataDaTime = Convert.ToDateTime(dateTimePickerDNFuncionario.Value.Date.ToString("dd/MM/yy")); ;
+            Vendas.Quantidade = Convert.ToInt32(textBoxQuantidaCadastrar.Text);
+            Vendas.ValorTotal = Convert.ToInt32(textBoxValorTotalCadastrar.Text);
+            Vendas.DataDaTime = Convert.ToDateTime(dateTimePickerDataVendaCadastrar.Value.Date.ToString("dd/MM/yy")); ;
 
-            //ManipularVenda manipularVenda = new ManipularVenda();
-            //manipularVenda.cadastrarVenda();
+            ManipularVenda manipularVenda = new ManipularVenda();
+            manipularVenda.cadastrarVenda();
         }
     }
 }
