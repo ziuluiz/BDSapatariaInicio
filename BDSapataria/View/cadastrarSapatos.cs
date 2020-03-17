@@ -38,7 +38,7 @@ namespace BDSapataria.View
             Sapatos.Tamanho = textBoxCadastrarTamanho.Text;
             Sapatos.Genero = textBoxCadastraGenero.Text;
             Sapatos.Marca = textBoxCadastraMarca.Text;
-            Sapatos.Preco = Convert.ToInt32(textBoxCadastraPreco.Text);
+            Sapatos.Preco = Convert.ToDouble((textBoxCadastraPreco.Text));
 
             ManipulaSapato manipulaSapato = new ManipulaSapato();
             manipulaSapato.cadastrarSapatos();

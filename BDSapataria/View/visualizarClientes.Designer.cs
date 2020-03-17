@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.Clientes = new System.Windows.Forms.TabPage();
+            this.materialRaisedButtonVisualizarCliente = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridViewCliente = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.materialRaisedButtonVisualizarCliente = new MaterialSkin.Controls.MaterialRaisedButton();
             this.Clientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -53,6 +53,22 @@
             this.Clientes.Text = "Clientes";
             this.Clientes.UseVisualStyleBackColor = true;
             // 
+            // materialRaisedButtonVisualizarCliente
+            // 
+            this.materialRaisedButtonVisualizarCliente.AutoSize = true;
+            this.materialRaisedButtonVisualizarCliente.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButtonVisualizarCliente.Depth = 0;
+            this.materialRaisedButtonVisualizarCliente.Icon = null;
+            this.materialRaisedButtonVisualizarCliente.Location = new System.Drawing.Point(185, 11);
+            this.materialRaisedButtonVisualizarCliente.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButtonVisualizarCliente.Name = "materialRaisedButtonVisualizarCliente";
+            this.materialRaisedButtonVisualizarCliente.Primary = true;
+            this.materialRaisedButtonVisualizarCliente.Size = new System.Drawing.Size(94, 36);
+            this.materialRaisedButtonVisualizarCliente.TabIndex = 1;
+            this.materialRaisedButtonVisualizarCliente.Text = "Pesquisar";
+            this.materialRaisedButtonVisualizarCliente.UseVisualStyleBackColor = true;
+            this.materialRaisedButtonVisualizarCliente.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
             // dataGridViewCliente
             // 
             this.dataGridViewCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -63,6 +79,7 @@
             this.Column4});
             this.dataGridViewCliente.Location = new System.Drawing.Point(1, 53);
             this.dataGridViewCliente.Name = "dataGridViewCliente";
+            this.dataGridViewCliente.RowHeadersVisible = false;
             this.dataGridViewCliente.Size = new System.Drawing.Size(444, 292);
             this.dataGridViewCliente.TabIndex = 0;
             // 
@@ -95,22 +112,6 @@
             this.tabControl1.Size = new System.Drawing.Size(600, 361);
             this.tabControl1.TabIndex = 1;
             // 
-            // materialRaisedButtonVisualizarCliente
-            // 
-            this.materialRaisedButtonVisualizarCliente.AutoSize = true;
-            this.materialRaisedButtonVisualizarCliente.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialRaisedButtonVisualizarCliente.Depth = 0;
-            this.materialRaisedButtonVisualizarCliente.Icon = null;
-            this.materialRaisedButtonVisualizarCliente.Location = new System.Drawing.Point(185, 11);
-            this.materialRaisedButtonVisualizarCliente.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButtonVisualizarCliente.Name = "materialRaisedButtonVisualizarCliente";
-            this.materialRaisedButtonVisualizarCliente.Primary = true;
-            this.materialRaisedButtonVisualizarCliente.Size = new System.Drawing.Size(94, 36);
-            this.materialRaisedButtonVisualizarCliente.TabIndex = 1;
-            this.materialRaisedButtonVisualizarCliente.Text = "Pesquisar";
-            this.materialRaisedButtonVisualizarCliente.UseVisualStyleBackColor = true;
-            this.materialRaisedButtonVisualizarCliente.Click += new System.EventHandler(this.materialRaisedButton1_Click);
-            // 
             // visualizarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +119,7 @@
             this.ClientSize = new System.Drawing.Size(473, 456);
             this.Controls.Add(this.tabControl1);
             this.Name = "visualizarClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
             this.Load += new System.EventHandler(this.visualizarClientes_Load);
             this.Clientes.ResumeLayout(false);

@@ -192,6 +192,7 @@
             this.Controls.Add(this.textBoxValorTotalAlterar);
             this.Controls.Add(this.textBoxQuantidaAlterar);
             this.Name = "AlterarVenda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AlterarVenda";
             this.ResumeLayout(false);
             this.PerformLayout();
