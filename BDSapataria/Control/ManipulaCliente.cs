@@ -15,7 +15,7 @@ namespace BDSapataria.Control
         public void cadastrarCliente()
         {
             SqlConnection cn = new SqlConnection(Conexao.Conectar());
-            SqlCommand cmd = new SqlCommand("@pCadastrarCliente",cn);
+            SqlCommand cmd = new SqlCommand("pCadastrarCliente",cn);
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
@@ -40,7 +40,7 @@ namespace BDSapataria.Control
         public void alterarCliente()
         {
             SqlConnection cn = new SqlConnection(Conexao.Conectar());
-            SqlCommand cmd = new SqlCommand("@pAlterarCliente",cn);
+            SqlCommand cmd = new SqlCommand("pAlterarCliente",cn);
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
@@ -61,7 +61,7 @@ namespace BDSapataria.Control
         public void deletarCliente()
         {
             SqlConnection cn = new SqlConnection(Conexao.Conectar());
-            SqlCommand cmd = new SqlCommand("@pDeletarCliente", cn);
+            SqlCommand cmd = new SqlCommand("pDeletarCliente", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
