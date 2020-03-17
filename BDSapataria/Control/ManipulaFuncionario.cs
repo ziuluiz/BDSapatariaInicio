@@ -75,7 +75,7 @@ namespace BDSapataria.Control
             return dados;
         }//fim do visualizar todos funcionario
 
-        public void VisualizarCPFFuncionario()
+        public void VisualizarCPFFuncionarios()
         {
             SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pVisualizarCPFFuncionario", cn);

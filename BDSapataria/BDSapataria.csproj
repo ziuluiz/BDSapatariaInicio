@@ -137,6 +137,12 @@
     <Compile Include="View\GerenciarCliente.Designer.cs">
       <DependentUpon>GerenciarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\GerenciarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GerenciarFuncionario.Designer.cs">
+      <DependentUpon>GerenciarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TelaDeCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\GerenciarCliente.resx">
       <DependentUpon>GerenciarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GerenciarFuncionario.resx">
+      <DependentUpon>GerenciarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TelaDeCadastroFuncionario.resx">
       <DependentUpon>TelaDeCadastroFuncionario.cs</DependentUpon>

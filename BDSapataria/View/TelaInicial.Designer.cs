@@ -50,13 +50,13 @@
             this.materialButtonGerenciarFun.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialButtonGerenciarFun.Depth = 0;
             this.materialButtonGerenciarFun.Icon = null;
-            this.materialButtonGerenciarFun.Location = new System.Drawing.Point(55, 177);
+            this.materialButtonGerenciarFun.Location = new System.Drawing.Point(30, 177);
             this.materialButtonGerenciarFun.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButtonGerenciarFun.Name = "materialButtonGerenciarFun";
             this.materialButtonGerenciarFun.Primary = true;
-            this.materialButtonGerenciarFun.Size = new System.Drawing.Size(119, 36);
+            this.materialButtonGerenciarFun.Size = new System.Drawing.Size(196, 36);
             this.materialButtonGerenciarFun.TabIndex = 0;
-            this.materialButtonGerenciarFun.Text = "Funcionarios";
+            this.materialButtonGerenciarFun.Text = "Gerenciar Funcionarios";
             this.materialButtonGerenciarFun.UseVisualStyleBackColor = true;
             // 
             // materialButtonGereClie
@@ -65,7 +65,7 @@
             this.materialButtonGereClie.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialButtonGereClie.Depth = 0;
             this.materialButtonGereClie.Icon = null;
-            this.materialButtonGereClie.Location = new System.Drawing.Point(239, 177);
+            this.materialButtonGereClie.Location = new System.Drawing.Point(259, 177);
             this.materialButtonGereClie.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButtonGereClie.Name = "materialButtonGereClie";
             this.materialButtonGereClie.Primary = true;
@@ -114,7 +114,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(51, 112);
+            this.materialLabel2.Location = new System.Drawing.Point(26, 112);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(113, 22);
@@ -128,7 +128,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(235, 112);
+            this.materialLabel1.Location = new System.Drawing.Point(255, 112);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(75, 22);
@@ -217,7 +217,7 @@
             this.materialButtonVisuClie.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialButtonVisuClie.Depth = 0;
             this.materialButtonVisuClie.Icon = null;
-            this.materialButtonVisuClie.Location = new System.Drawing.Point(239, 256);
+            this.materialButtonVisuClie.Location = new System.Drawing.Point(259, 256);
             this.materialButtonVisuClie.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButtonVisuClie.Name = "materialButtonVisuClie";
             this.materialButtonVisuClie.Primary = true;
@@ -233,7 +233,7 @@
             this.materialButtonCadClie.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialButtonCadClie.Depth = 0;
             this.materialButtonCadClie.Icon = null;
-            this.materialButtonCadClie.Location = new System.Drawing.Point(239, 335);
+            this.materialButtonCadClie.Location = new System.Drawing.Point(259, 335);
             this.materialButtonCadClie.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButtonCadClie.Name = "materialButtonCadClie";
             this.materialButtonCadClie.Primary = true;

@@ -85,7 +85,10 @@ namespace BDSapataria.View
 
         private void materialButtonCadVend_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            CadastrarVenda cadastrarVenda = new CadastrarVenda();
+            cadastrarVenda.Closed += (s, args) => this.Close();
+            cadastrarVenda.ShowDialog();
         }
     }//fim da classe
 }//fim do projeto
