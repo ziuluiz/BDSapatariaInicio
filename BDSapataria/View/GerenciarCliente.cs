@@ -75,7 +75,7 @@ namespace BDSapataria.View
             Cliente.CpfCliente = textBoxCpf.Text;
 
             ManipulaCliente manipulaCliente = new ManipulaCliente();
-            manipulaCliente.deletarCliente();
+            manipulaCliente.visualizarCpfCliente();
 
             textBoxCpf.Text = Cliente.CpfCliente;
             textBoxNome.Text = Cliente.NomeCli;
