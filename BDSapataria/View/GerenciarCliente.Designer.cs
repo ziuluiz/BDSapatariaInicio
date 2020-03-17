@@ -170,7 +170,7 @@
             this.Controls.Add(this.labelEndereco);
             this.Controls.Add(this.labelCPF);
             this.Name = "GerenciarCliente";
-            this.Text = "GerenciarCliente";
+            this.Text = "Cliente";
             this.Load += new System.EventHandler(this.GerenciarCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

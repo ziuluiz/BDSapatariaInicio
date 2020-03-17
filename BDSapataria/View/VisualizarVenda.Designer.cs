@@ -30,12 +30,12 @@
         {
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridViewVendasTudo = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.buttonBuscarVendasTudo = new System.Windows.Forms.Button();
+            this.materialRaisedButtonPesquisaVendas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVendasTudo)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -66,25 +66,25 @@
             this.dataGridViewVendasTudo.Size = new System.Drawing.Size(737, 150);
             this.dataGridViewVendasTudo.TabIndex = 0;
             // 
-            // Column4
+            // Column1
             // 
-            this.Column4.HeaderText = "Data da Venda";
-            this.Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Total Vendas";
-            this.Column3.Name = "Column3";
+            this.Column1.HeaderText = "ID Vendas";
+            this.Column1.Name = "Column1";
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Quantidade";
             this.Column2.Name = "Column2";
             // 
-            // Column1
+            // Column3
             // 
-            this.Column1.HeaderText = "ID Vendas";
-            this.Column1.Name = "Column1";
+            this.Column3.HeaderText = "Total Vendas";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Data da Venda";
+            this.Column4.Name = "Column4";
             // 
             // tabControl1
             // 
@@ -95,29 +95,36 @@
             this.tabControl1.Size = new System.Drawing.Size(776, 215);
             this.tabControl1.TabIndex = 2;
             // 
-            // buttonBuscarVendasTudo
+            // materialRaisedButtonPesquisaVendas
             // 
-            this.buttonBuscarVendasTudo.Location = new System.Drawing.Point(336, 106);
-            this.buttonBuscarVendasTudo.Name = "buttonBuscarVendasTudo";
-            this.buttonBuscarVendasTudo.Size = new System.Drawing.Size(119, 23);
-            this.buttonBuscarVendasTudo.TabIndex = 1;
-            this.buttonBuscarVendasTudo.Text = "Buscar Vendas";
-            this.buttonBuscarVendasTudo.UseVisualStyleBackColor = true;
-            this.buttonBuscarVendasTudo.Click += new System.EventHandler(this.buttonBuscarVendasTudo_Click);
+            this.materialRaisedButtonPesquisaVendas.AutoSize = true;
+            this.materialRaisedButtonPesquisaVendas.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButtonPesquisaVendas.Depth = 0;
+            this.materialRaisedButtonPesquisaVendas.Icon = null;
+            this.materialRaisedButtonPesquisaVendas.Location = new System.Drawing.Point(344, 86);
+            this.materialRaisedButtonPesquisaVendas.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButtonPesquisaVendas.Name = "materialRaisedButtonPesquisaVendas";
+            this.materialRaisedButtonPesquisaVendas.Primary = true;
+            this.materialRaisedButtonPesquisaVendas.Size = new System.Drawing.Size(94, 36);
+            this.materialRaisedButtonPesquisaVendas.TabIndex = 3;
+            this.materialRaisedButtonPesquisaVendas.Text = "Pesquisar";
+            this.materialRaisedButtonPesquisaVendas.UseVisualStyleBackColor = true;
+            this.materialRaisedButtonPesquisaVendas.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // VisualizarVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.materialRaisedButtonPesquisaVendas);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.buttonBuscarVendasTudo);
             this.Name = "VisualizarVenda";
-            this.Text = "VisualizarVenda";
+            this.Text = "Vendas";
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVendasTudo)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -130,6 +137,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Button buttonBuscarVendasTudo;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButtonPesquisaVendas;
     }
 }

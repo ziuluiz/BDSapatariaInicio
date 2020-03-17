@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BDSapataria.Control;
 using BDSapataria.Model;
+using MaterialSkin.Controls;
+using MaterialSkin;
 
 namespace BDSapataria.View
 {
-    public partial class cadastrarSapatos : Form
+    public partial class cadastrarSapatos : MaterialForm
     {
         public cadastrarSapatos()
         {
@@ -20,6 +22,17 @@ namespace BDSapataria.View
         }
 
         private void buttonCadastrarSapato_Click(object sender, EventArgs e) 
+        {
+           ;
+
+        }
+
+        private void buttonCadastrarSapato_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             Sapatos.Modelo = textBoxCadastraMarca.Text;
             Sapatos.Tamanho = textBoxCadastrarTamanho.Text;
@@ -29,7 +42,6 @@ namespace BDSapataria.View
 
             ManipulaSapato manipulaSapato = new ManipulaSapato();
             manipulaSapato.cadastrarSapatos();
-
         }
     }
 }

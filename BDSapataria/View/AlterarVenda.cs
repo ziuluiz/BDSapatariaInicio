@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BDSapataria.Model;
 using BDSapataria.Control;
+using MaterialSkin.Controls;
+using MaterialSkin;
 
 namespace BDSapataria.View
 {
-    public partial class AlterarVenda : Form
+    public partial class AlterarVenda : MaterialForm
     {
         public AlterarVenda()
         {
@@ -20,6 +22,21 @@ namespace BDSapataria.View
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonDeletar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             Vendas.Idvenda = Convert.ToInt32(textBoxIDVendaDigitar);
 
@@ -32,17 +49,7 @@ namespace BDSapataria.View
             dateTimePickerDataVendaAlterar.Text = Convert.ToString(Vendas.DataDaTime);
         }
 
-        private void buttonAlterar_Click(object sender, EventArgs e)
-        {
-            ManipularVenda manipularVenda = new ManipularVenda();
-            manipularVenda.alteraVenda();
-
-            textBoxQuantidaAlterar.Text = Convert.ToString(Vendas.Quantidade);
-            textBoxValorTotalAlterar.Text = Convert.ToString(Vendas.ValorTotal);
-            dateTimePickerDataVendaAlterar.Text = Convert.ToString(Vendas.DataDaTime);
-        }
-
-        private void buttonDeletar_Click(object sender, EventArgs e)
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
             ManipularVenda manipularVenda = new ManipularVenda();
             manipularVenda.deletarVenda();
@@ -51,6 +58,16 @@ namespace BDSapataria.View
             textBoxQuantidaAlterar.Text = "";
             textBoxValorTotalAlterar.Text = "";
             dateTimePickerDataVendaAlterar.Text = "";
+        }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+            ManipularVenda manipularVenda = new ManipularVenda();
+            manipularVenda.alteraVenda();
+
+            textBoxQuantidaAlterar.Text = Convert.ToString(Vendas.Quantidade);
+            textBoxValorTotalAlterar.Text = Convert.ToString(Vendas.ValorTotal);
+            dateTimePickerDataVendaAlterar.Text = Convert.ToString(Vendas.DataDaTime);
         }
     }
 }

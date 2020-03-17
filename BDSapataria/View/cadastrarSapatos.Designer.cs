@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonCadastrarSapato = new System.Windows.Forms.Button();
             this.textBoxCadastraPreco = new System.Windows.Forms.TextBox();
             this.textBoxCadastraMarca = new System.Windows.Forms.TextBox();
             this.textBoxCadastraGenero = new System.Windows.Forms.TextBox();
@@ -40,69 +38,40 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.materialRaisedButtonCadastrarSapatos = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.buttonCadastrarSapato);
-            this.groupBox1.Controls.Add(this.textBoxCadastraPreco);
-            this.groupBox1.Controls.Add(this.textBoxCadastraMarca);
-            this.groupBox1.Controls.Add(this.textBoxCadastraGenero);
-            this.groupBox1.Controls.Add(this.textBoxCadastrarTamanho);
-            this.groupBox1.Controls.Add(this.textBoxCadastrarModelo);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 30);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(404, 305);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cadastrar Sapatos";
-            // 
-            // buttonCadastrarSapato
-            // 
-            this.buttonCadastrarSapato.Location = new System.Drawing.Point(196, 247);
-            this.buttonCadastrarSapato.Name = "buttonCadastrarSapato";
-            this.buttonCadastrarSapato.Size = new System.Drawing.Size(75, 23);
-            this.buttonCadastrarSapato.TabIndex = 10;
-            this.buttonCadastrarSapato.Text = "Cadastrar";
-            this.buttonCadastrarSapato.UseVisualStyleBackColor = true;
             // 
             // textBoxCadastraPreco
             // 
-            this.textBoxCadastraPreco.Location = new System.Drawing.Point(119, 197);
+            this.textBoxCadastraPreco.Location = new System.Drawing.Point(111, 217);
             this.textBoxCadastraPreco.Name = "textBoxCadastraPreco";
             this.textBoxCadastraPreco.Size = new System.Drawing.Size(228, 20);
             this.textBoxCadastraPreco.TabIndex = 9;
             // 
             // textBoxCadastraMarca
             // 
-            this.textBoxCadastraMarca.Location = new System.Drawing.Point(119, 165);
+            this.textBoxCadastraMarca.Location = new System.Drawing.Point(111, 185);
             this.textBoxCadastraMarca.Name = "textBoxCadastraMarca";
             this.textBoxCadastraMarca.Size = new System.Drawing.Size(228, 20);
             this.textBoxCadastraMarca.TabIndex = 8;
             // 
             // textBoxCadastraGenero
             // 
-            this.textBoxCadastraGenero.Location = new System.Drawing.Point(119, 133);
+            this.textBoxCadastraGenero.Location = new System.Drawing.Point(111, 153);
             this.textBoxCadastraGenero.Name = "textBoxCadastraGenero";
             this.textBoxCadastraGenero.Size = new System.Drawing.Size(228, 20);
             this.textBoxCadastraGenero.TabIndex = 7;
             // 
             // textBoxCadastrarTamanho
             // 
-            this.textBoxCadastrarTamanho.Location = new System.Drawing.Point(119, 102);
+            this.textBoxCadastrarTamanho.Location = new System.Drawing.Point(111, 122);
             this.textBoxCadastrarTamanho.Name = "textBoxCadastrarTamanho";
             this.textBoxCadastrarTamanho.Size = new System.Drawing.Size(228, 20);
             this.textBoxCadastrarTamanho.TabIndex = 6;
             // 
             // textBoxCadastrarModelo
             // 
-            this.textBoxCadastrarModelo.Location = new System.Drawing.Point(119, 70);
+            this.textBoxCadastrarModelo.Location = new System.Drawing.Point(111, 90);
             this.textBoxCadastrarModelo.Name = "textBoxCadastrarModelo";
             this.textBoxCadastrarModelo.Size = new System.Drawing.Size(228, 20);
             this.textBoxCadastrarModelo.TabIndex = 5;
@@ -110,7 +79,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 204);
+            this.label5.Location = new System.Drawing.Point(11, 224);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 13);
             this.label5.TabIndex = 4;
@@ -119,7 +88,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 172);
+            this.label4.Location = new System.Drawing.Point(11, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 3;
@@ -128,7 +97,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 140);
+            this.label3.Location = new System.Drawing.Point(11, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 2;
@@ -137,7 +106,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 109);
+            this.label2.Location = new System.Drawing.Point(11, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 1;
@@ -146,30 +115,52 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 77);
+            this.label1.Location = new System.Drawing.Point(11, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Modelo :";
+            // 
+            // materialRaisedButtonCadastrarSapatos
+            // 
+            this.materialRaisedButtonCadastrarSapatos.AutoSize = true;
+            this.materialRaisedButtonCadastrarSapatos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButtonCadastrarSapatos.Depth = 0;
+            this.materialRaisedButtonCadastrarSapatos.Icon = null;
+            this.materialRaisedButtonCadastrarSapatos.Location = new System.Drawing.Point(111, 276);
+            this.materialRaisedButtonCadastrarSapatos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButtonCadastrarSapatos.Name = "materialRaisedButtonCadastrarSapatos";
+            this.materialRaisedButtonCadastrarSapatos.Primary = true;
+            this.materialRaisedButtonCadastrarSapatos.Size = new System.Drawing.Size(100, 36);
+            this.materialRaisedButtonCadastrarSapatos.TabIndex = 11;
+            this.materialRaisedButtonCadastrarSapatos.Text = "Cadastrar";
+            this.materialRaisedButtonCadastrarSapatos.UseVisualStyleBackColor = true;
+            this.materialRaisedButtonCadastrarSapatos.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // cadastrarSapatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 345);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.materialRaisedButtonCadastrarSapatos);
+            this.Controls.Add(this.textBoxCadastraPreco);
+            this.Controls.Add(this.textBoxCadastrarModelo);
+            this.Controls.Add(this.textBoxCadastraMarca);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxCadastraGenero);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBoxCadastrarTamanho);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
             this.Name = "cadastrarSapatos";
             this.Text = "Sapatos";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button buttonCadastrarSapato;
         private System.Windows.Forms.TextBox textBoxCadastraPreco;
         private System.Windows.Forms.TextBox textBoxCadastraMarca;
         private System.Windows.Forms.TextBox textBoxCadastraGenero;
@@ -180,5 +171,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButtonCadastrarSapatos;
     }
 }

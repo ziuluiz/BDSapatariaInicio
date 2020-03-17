@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BDSapataria.Control;
 using BDSapataria.Model;
+using MaterialSkin.Controls;
+using MaterialSkin;
 
 namespace BDSapataria.View
 {
-    public partial class visualizarSapatos : Form
+    public partial class visualizarSapatos : MaterialForm
     {
         public visualizarSapatos()
         {
@@ -20,6 +22,11 @@ namespace BDSapataria.View
         }
 
         private void buttonBuscarSapatoTudo_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             dataGridViewSaptosTudo.DataSource = ManipulaSapato.visualizarTudoSapato();
             dataGridViewSaptosTudo.Columns[0].Visible = false;
