@@ -15,14 +15,14 @@ namespace BDSapataria.Control
         public void cadastrarCliente()
         {
             SqlConnection cn = new SqlConnection(Conexao.Conectar());
-            SqlCommand cmd = new SqlCommand("@pCadastrarCliente");
+            SqlCommand cmd = new SqlCommand("@pCadastrarCliente",cn);
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
-                cmd.Parameters.AddWithValue("@cpfCliente", Cliente.CpfCliente);
+                cmd.Parameters.AddWithValue("@CPFCliente", Cliente.CpfCliente);
                 cmd.Parameters.AddWithValue("@foneCliente", Cliente.Fone);
                 cmd.Parameters.AddWithValue("@endereco", Cliente.Endereco);
-                cmd.Parameters.AddWithValue("@nomeCli", Cliente.NomeCli);
+                cmd.Parameters.AddWithValue("@nomeCliente", Cliente.NomeCli);
                 cn.Open();
                 cmd.Connection = cn;
                 cmd.ExecuteNonQuery();
@@ -34,6 +34,8 @@ namespace BDSapataria.Control
                 throw;
             }
 
+
+
         }
         public void alterarCliente()
         {
@@ -42,10 +44,10 @@ namespace BDSapataria.Control
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
-                cmd.Parameters.AddWithValue("@cpfCliente", Cliente.CpfCliente);
+                cmd.Parameters.AddWithValue("@CPFCliente", Cliente.CpfCliente);
                 cmd.Parameters.AddWithValue("@foneCliente", Cliente.Fone);
                 cmd.Parameters.AddWithValue("@endereco", Cliente.Endereco);
-                cmd.Parameters.AddWithValue("@nnomeClil", Cliente.NomeCli);
+                cmd.Parameters.AddWithValue("@nomeCliente", Cliente.NomeCli);
                 cn.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Alteração realizada com suscesso!");
@@ -59,11 +61,11 @@ namespace BDSapataria.Control
         public void deletarCliente()
         {
             SqlConnection cn = new SqlConnection(Conexao.Conectar());
-            SqlCommand cmd = new SqlCommand("@DeletarCliente", cn);
+            SqlCommand cmd = new SqlCommand("@pDeletarCliente", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
-                cmd.Parameters.AddWithValue("@cpfCliente", Cliente.CpfCliente);
+                cmd.Parameters.AddWithValue("@CPFCliente", Cliente.CpfCliente);
                 cn.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Cliente excluido com suscesso!");
@@ -101,12 +103,12 @@ namespace BDSapataria.Control
 
             try
             {
-                cmd.Parameters.AddWithValue("@cpfCliente",Cliente.CpfCliente);
+                cmd.Parameters.AddWithValue("@CPFCliente",Cliente.CpfCliente);
                 cn.Open();
                 var dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    Cliente.CpfCliente = (string)dr["cpfCliente"];
+                    Cliente.CpfCliente = (string)dr["CPFCliente"];
                     Cliente.Endereco = (string)dr["endereco"];
                     Cliente.Fone = (string)dr["foneCliente"];
                     Cliente.NomeCli = (string)dr["NomeCli"];
@@ -134,7 +136,7 @@ namespace BDSapataria.Control
 
             try
             {
-                cmd.Parameters.AddWithValue("@cpfCliente", Cliente.CpfCliente);
+                cmd.Parameters.AddWithValue("@CPFCliente", Cliente.CpfCliente);
                 cn.Open();
                 cmd.ExecuteNonQuery();
 

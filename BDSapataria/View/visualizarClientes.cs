@@ -43,12 +43,12 @@ namespace BDSapataria.View
             dataGridViewCliente.Columns[1].Visible = false;
             dataGridViewCliente.Columns[2].Visible = false;
             dataGridViewCliente.Columns[3].Visible = false;
-            dataGridViewCliente.Columns[4].Visible = false;
+            
 
-            dataGridViewCliente.Columns[5].HeaderText = "Cpf";
-            dataGridViewCliente.Columns[6].HeaderText = "Nome";
-            dataGridViewCliente.Columns[7].HeaderText = "Endereco";
-            dataGridViewCliente.Columns[8].HeaderText = "Telefone";
+            dataGridViewCliente.Columns[4].HeaderText = "Cpf";
+            dataGridViewCliente.Columns[5].HeaderText = "Nome";
+            dataGridViewCliente.Columns[6].HeaderText = "Endereco";
+            dataGridViewCliente.Columns[7].HeaderText = "Telefone";
         }
     }
 }
