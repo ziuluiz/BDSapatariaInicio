@@ -198,6 +198,7 @@
             this.ClientSize = new System.Drawing.Size(477, 450);
             this.Controls.Add(this.groupBox1);
             this.Name = "AlterarVenda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AlterarVenda";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

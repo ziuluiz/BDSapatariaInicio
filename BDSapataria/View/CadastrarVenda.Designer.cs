@@ -121,6 +121,7 @@
             this.ClientSize = new System.Drawing.Size(414, 450);
             this.Controls.Add(this.groupBox1);
             this.Name = "CadastrarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastrarCliente";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

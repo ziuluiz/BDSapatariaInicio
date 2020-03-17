@@ -14,7 +14,7 @@ namespace BDSapataria.Control
     {
         public void cadastrarCliente()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("@pCadastrarCliente");
             cmd.CommandType = CommandType.StoredProcedure;
             try
@@ -37,7 +37,7 @@ namespace BDSapataria.Control
         }
         public void alterarCliente()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("@pAlterarCliente",cn);
             cmd.CommandType = CommandType.StoredProcedure;
             try
@@ -58,7 +58,7 @@ namespace BDSapataria.Control
         }
         public void deletarCliente()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("@DeletarCliente", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             try
@@ -77,7 +77,7 @@ namespace BDSapataria.Control
         }
         public static BindingSource visualizarTodosCliente()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pVisualizarTodosCliente", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cn.Open();
@@ -95,7 +95,7 @@ namespace BDSapataria.Control
         }
         public void  visualizarCpfCliente()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pVisualizarCPFCliente", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -128,7 +128,7 @@ namespace BDSapataria.Control
         }
         public void visualizarDeletarCliente()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pDeletarCliente", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 

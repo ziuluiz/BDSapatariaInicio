@@ -170,6 +170,7 @@
             this.Controls.Add(this.labelEndereco);
             this.Controls.Add(this.labelCPF);
             this.Name = "GerenciarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GerenciarCliente";
             this.Load += new System.EventHandler(this.GerenciarCliente_Load);
             this.ResumeLayout(false);

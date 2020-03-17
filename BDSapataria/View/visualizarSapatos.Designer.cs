@@ -83,6 +83,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Name = "visualizarSapatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "visualizarSapatos";
             this.groupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);

@@ -154,6 +154,7 @@
             this.Controls.Add(this.labelCpfCliente);
             this.Controls.Add(this.labelNome);
             this.Name = "ClienteCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
             this.Load += new System.EventHandler(this.ClienteCadastro_Load);
             this.ResumeLayout(false);

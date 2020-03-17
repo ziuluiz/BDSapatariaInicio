@@ -113,6 +113,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonBuscarVendasTudo);
             this.Name = "VisualizarVenda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VisualizarVenda";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

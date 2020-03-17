@@ -13,13 +13,13 @@ namespace BDSapataria.Model
         private static string tamanho;
         private static string genero;
         private static string marca;
-        private static float preco;
+        private static double preco;
 
         public static int CodProduto { get => codProduto; set => codProduto = value; }
         public static string Modelo { get => modelo; set => modelo = value; }
         public static string Tamanho { get => tamanho; set => tamanho = value; }
         public static string Genero { get => genero; set => genero = value; }
         public static string Marca { get => marca; set => marca = value; }
-        public static float Preco { get => preco; set => preco = value; }
+        public static double Preco { get => preco; set => preco = value; }
     }
 }

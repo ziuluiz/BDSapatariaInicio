@@ -14,7 +14,7 @@ namespace BDSapataria.Control
     {
         public void cadastrarSapatos() 
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pCadastrarSapato", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -43,7 +43,7 @@ namespace BDSapataria.Control
 
         public void alterarSapato() 
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pAlterarProduto", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -70,7 +70,7 @@ namespace BDSapataria.Control
 
         public void deletarSapato() 
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pDeletarProduto", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -91,7 +91,7 @@ namespace BDSapataria.Control
 
         public static BindingSource visualizarTudoSapato()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pVisualizarSapatoTudo", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cn.Open();
@@ -110,7 +110,7 @@ namespace BDSapataria.Control
 
         public static BindingSource visualizarcodProtudoSapato()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pVisualizarSapatoCodigo", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cn.Open();
@@ -129,7 +129,7 @@ namespace BDSapataria.Control
 
         public void visualizarProdutoCodien()
         {
-            SqlConnection cn = new SqlConnection(Conexao.conectar());
+            SqlConnection cn = new SqlConnection(Conexao.Conectar());
             SqlCommand cmd = new SqlCommand("pVisualizarSapatosCodigo", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
